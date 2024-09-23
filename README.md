@@ -1,4 +1,4 @@
-<h1>Motion graph position shaders</h1> 
+<h1>Motion graph URP Shader with space</h1> 
 
 A graph with motion using time for creating colors based on position with an URP Shader in Unity
 
