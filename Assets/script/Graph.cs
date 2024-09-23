@@ -8,6 +8,7 @@ public class Graph : MonoBehaviour
     [SerializeField, Range(10, 100)] private int resolution;
     
     
+    
 
     void Awake()
     {
