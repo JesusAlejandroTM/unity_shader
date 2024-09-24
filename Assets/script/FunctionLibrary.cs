@@ -7,16 +7,11 @@ public static class FunctionLibrary
 {
     public delegate float Function(float x, float t);
 
+    private static Function[] _functions = {Wave, MultiWave, Ripple};
+
     public static Function GetFunction(int index)
     {
-        if (index == 0) {
-            return Wave;
-        }
-        if (index == 1)
-        {
-            return MultiWave;
-        }
-        return Ripple;
+        return _functions[index];
     }
     
     public static float Wave(float x, float t)

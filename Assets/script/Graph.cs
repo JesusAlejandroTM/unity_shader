@@ -37,16 +37,7 @@ public class Graph : MonoBehaviour
         {
             Transform point = _points[i];
             Vector3 position = point.localPosition;
-            if (function == 0) {
-                position.y = FunctionLibrary.Wave(position.x, time);
-            }
-            else if (function == 1){
-                position.y = FunctionLibrary.MultiWave(position.x, time);
-            }
-            else
-            {
-                position.y = FunctionLibrary.Ripple(position.x, time);
-            }
+            position.y = f(position.x, time);
             point.localPosition = position;
         }
     }
