@@ -6,12 +6,14 @@ using static UnityEngine.Mathf;
 public static class FunctionLibrary
 {
     public delegate float Function(float x, float t);
+    
+    public enum FunctionName {Wave, Multiwave, Ripple }
 
     private static Function[] _functions = {Wave, MultiWave, Ripple};
-
-    public static Function GetFunction(int index)
+    
+    public static Function GetFunction(FunctionName name)
     {
-        return _functions[index];
+        return _functions[(int)name];
     }
     
     public static float Wave(float x, float t)
