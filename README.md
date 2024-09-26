@@ -1,6 +1,8 @@
-# Graphs and three-dimensional shapes visualization with Unity
+# Three-dimensional shapes visualization with Unity
 
-Using Unity's engine and shaders for generating and visualizing three-dimensional shapes
+https://github.com/user-attachments/assets/1963b84c-33f3-451c-92df-b67716c43301
+
+Using Unity's engine, shaders and math for generating and visualizing three-dimensional shapes
 
 * Graph
 * Extruded graphs
